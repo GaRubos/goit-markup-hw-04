@@ -10,6 +10,7 @@
   --button-hover-color--: #188ce8;
   --color-team-section--: #f5f4fa;
   --icon-color--: #afb1b8;
+  --footer-background-icon-color: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -30,6 +31,10 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.link {
+  text-decoration: none;
 }
 
 ul {
@@ -327,7 +332,8 @@ img {
   fill: var(--icon-color--);
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--accent-color--);
   fill: var(--primary-bg-color--);
 }
@@ -357,10 +363,11 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: var(--secondary-text-color--);
+  fill: var(--icon-color--);
 }
 
-.clients-box:hover {
+.clients-box:hover,
+.clients-box:focus {
   border-color: var(--accent-color--);
   fill: var(--accent-color--);
 }
@@ -435,7 +442,7 @@ img {
 .footer-social-title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color--);
@@ -457,11 +464,12 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--primary-text-color--);
+  background-color: var(--footer-background-icon-color);
   fill: var(--primary-bg-color--);
 }
 
-.footer-social-item:hover {
+.footer-social-item:hover,
+.footer-social-item:focus {
   background-color: var(--accent-color--);
 }
 
@@ -521,8 +529,10 @@ img {
   width: 370px;
 }
 
-.card-item .link {
-  text-decoration: none;
+.card-item:hover,
+.card-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .card-item .card-text {

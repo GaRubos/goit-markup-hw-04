@@ -67,7 +67,6 @@ img {
 
 .site-nav-logo {
   color: var(--accent-color--);
-  text-decoration: none;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -124,7 +123,7 @@ img {
   color: var(--accent-color--);
   fill: currentColor;
 }
-.site-nav-list .link.current {
+.site-nav-list .current {
   color: var(--accent-color--);
 }
 
@@ -140,6 +139,8 @@ img {
   height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .hero .section-title {
@@ -212,11 +213,12 @@ img {
   justify-content: space-between;
 }
 
-.benefits-item {
-  width: 270px;
+.benefits .benefits-item {
+  width: 250px;
 }
 
 .benefits-icon {
+  width: 270px;
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--color-team-section--);
@@ -296,12 +298,12 @@ img {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color--);
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
 }
 
 .team-card-text {
   background-color: #fff;
-  padding: 16px 0;
+  padding: 30px;
 }
 
 .team-list-item {
@@ -309,7 +311,6 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  padding-bottom: 30px;
 }
 
 /* social */
@@ -528,12 +529,6 @@ img {
   width: 370px;
 }
 
-.card-item:hover,
-.card-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .card-item .card-text {
   padding: 20px 24px;
   background: var(--primary-bg-color--);
@@ -558,4 +553,11 @@ img {
   color: var(--secondary-text-color--);
   margin: 0;
   padding: 0;
+}
+
+.card-link:hover,
+.card-link:focus {
+  display: block;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
